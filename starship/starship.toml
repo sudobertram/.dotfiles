@@ -1,0 +1,33 @@
+# Базовый формат prompt
+format = """
+$directory\
+$git_branch\
+$git_status\
+$python\
+$character"""
+
+# Символ приглашения
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+
+# Директория
+[directory]
+style = "bold cyan"
+truncation_length = 3
+truncate_to_repo = true
+
+# Git ветка
+[git_branch]
+symbol = " "
+style = "bold purple"
+
+# Git статус
+[git_status]
+style = "bold yellow"
+
+# Python
+[python]
+symbol = " "
+style = "bold yellow"
+format = 'via [$symbol$pyenv_prefix($version )]($style)'
