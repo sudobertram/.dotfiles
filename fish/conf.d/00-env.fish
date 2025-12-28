@@ -1,5 +1,6 @@
 # ENV VARS
 
+eval (/opt/homebrew/bin/brew shellenv)
 # Disable greeting
 set -g fish_greeting
 
