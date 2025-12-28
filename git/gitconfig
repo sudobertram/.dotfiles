@@ -1,0 +1,39 @@
+[user]
+    name = d4rk 
+    email = sudosubertram@gmail.com
+
+[core]
+    editor = nvim
+    pager = delta
+
+[init]
+    defaultBranch = main
+
+[push]
+    autoSetupRemote = true
+    default = current
+
+[pull]
+    rebase = false
+
+[alias]
+    # Короткие команды
+    st = status
+    co = checkout
+    br = branch
+    ci = commit
+    
+    # Красивый лог
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    
+    # Полезное
+    amend = commit --amend --no-edit
+    undo = reset --soft HEAD~1
+
+[delta]
+    navigate = true
+    line-numbers = true
+    syntax-theme = Catppuccin-mocha
+
+[interactive]
+    diffFilter = delta --color-only
