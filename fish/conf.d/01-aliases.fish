@@ -21,7 +21,8 @@ alias gl "git pull"
 alias lg "lazygit"
 
 # Python
-alias py "python"
+alias python "python3"
+alias py "python3"
 alias pm "uv"
 
 # Редактор
